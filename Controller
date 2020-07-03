@@ -1,0 +1,143 @@
+
+
+namespace WebApplication11.Controllers
+{
+    public class HomeController : System.Web.Mvc.Controller
+    {
+        // GET: Home
+        public HomeController() : base()
+        {
+
+        }
+        public System.Web.Mvc.ActionResult Index()
+        {
+            return Content("Welcome To lesson One");
+        }
+
+        public System.Web.Mvc.ContentResult Index2()
+        {
+            string e1 = "Good Work ;;;";
+            return Content(e1);
+
+        }
+
+        public void Learn1()
+        {
+            System.Console.WriteLine("Hello word");
+        }
+        public System.Web.Mvc.ActionResult Learn2(int id)
+        {
+            return View();
+
+        }
+        public System.Web.Mvc.ActionResult Learn3(int? name)
+        {
+            return View();
+
+        }
+        public System.Web.Mvc.ActionResult Learn4(int id)
+        {
+            return View();
+
+        }
+        public System.Web.Mvc.ActionResult Learn5(int id, int di)
+        {
+            return View();
+
+        }
+        public System.Web.Mvc.ActionResult Learn6(int id)
+        {
+            return View();
+
+        }
+        public System.Web.Mvc.ActionResult result()
+        {
+            return View();
+        }
+        public System.Web.Mvc.ActionResult result2()
+        {
+            return View();
+        }
+        public System.Web.Mvc.ActionResult result3()
+        {
+            return View();
+        }
+        public System.Web.Mvc.ActionResult result4()
+        {
+            return View();
+        }
+        public System.Web.Mvc.ActionResult result5()
+        {
+            return View();
+        }
+        public System.Web.Mvc.ActionResult result6()
+        {
+            return View();
+        }
+        public string learn90()
+        {
+            return "H::lo";
+        }
+        public string res1()
+        {
+            return "Word";
+        }
+        public void res2()
+        {
+            System.Console.WriteLine("junior");
+        }
+        public string res3()
+        {
+
+            return "Example!!!" + "Today ";
+        }
+        public int num1()
+        {
+            return 4;
+        }
+        public System.Web.Mvc.ContentResult Result100()
+            {
+                    return Content("Hello Word ! ");
+            }
+        public System.Web.Mvc.ContentResult Result110()
+        {
+            return Content("<b>Hello Word ! </b>");
+        }
+        public System.Web.Mvc.ContentResult Result120()
+        {
+            return Content("<h1>Hello Word ! </h1>");
+        }
+        public System.Web.Mvc.ContentResult Result130()
+        {
+            string c1=Server.HtmlEncode("<b>Hello Word ! </b>");
+            return Content(c1);
+        }
+        public System.Web.Mvc.ActionResult act1(int id )
+        {
+            //  return "hello";
+
+            //string j1 = Server.HtmlEncode("<h1> Header One ! </h1>");
+            //return Content(j1);
+            switch (id)
+            {
+                case 1: 
+                    {
+                        return RedirectToAction(actionName: nameof(Result130));
+                    }
+                case 2:
+                    {
+                        return RedirectToAction(actionName: nameof(Result100));
+                    }
+                default:
+                    {
+                        string c1 = "A Wrong Number ";
+                        return Content(c1);
+                    }
+                    break;
+            }
+
+        }
+
+    }
+}
+    
